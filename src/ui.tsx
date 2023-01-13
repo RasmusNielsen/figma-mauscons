@@ -1,5 +1,4 @@
 import { Global, jsx } from '@emotion/core'
-import { version } from 'feather-icons/package.json'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import IconButton from './components/icon-button'
@@ -7,6 +6,8 @@ import SearchInput from './components/search-input'
 import theme from './theme'
 import './ui.css'
 import useSearch from './use-search'
+import packageJson from '../package.json';
+import { createRoot } from 'react-dom/client';
 
 function App() {
   const [query, setQuery] = React.useState('')
@@ -34,7 +35,7 @@ function App() {
           }}
         >
           {results.map(icon => (
-            <IconButton name={icon.name} contents={icon.contents} />
+            <IconButton key={icon.name} name={icon.name} contents={icon.contents} />
           ))}
         </div>
         <div
@@ -45,11 +46,13 @@ function App() {
             color: 'rgba(0, 0, 0, 0.5)',
           }}
         >
-          Feather v{version}
+          Mauscons v{packageJson.version}
         </div>
       </div>
     </div>
   )
 }
 
-ReactDOM.render(<App />, document.getElementById('root'))
+const container = document.getElementById('root');
+const root = createRoot(container!)
+root.render(<App />);

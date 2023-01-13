@@ -1,0 +1,8 @@
+<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+<rect width='24' height='24' fill='white'/>
+<path d='M12 20L12 7' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/>
+<path d='M17.0426 4.81393C16.723 4.33444 16.1211 4.13084 15.5798 4.32866C14.7783 4.62159 13.5964 5.06983 12.63 5.50313C12.2404 5.67784 12 6.06975 12 6.49678V6.49678C12 7.24839 12.7215 7.78955 13.4431 7.5791L16.3431 6.73326C17.1644 6.49371 17.5172 5.5258 17.0426 4.81393V4.81393Z' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/>
+<path d='M6.95738 4.81393C7.27704 4.33444 7.87893 4.13084 8.42019 4.32866C9.2217 4.62159 10.4036 5.06983 11.37 5.50313C11.7596 5.67784 12 6.06975 12 6.49678V6.49678C12 7.24839 11.2785 7.78955 10.5569 7.5791L7.65691 6.73326C6.83556 6.49371 6.4828 5.5258 6.95738 4.81393V4.81393Z' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/>
+<path d='M5 11H19V18C19 19.1046 18.1046 20 17 20H7C5.89543 20 5 19.1046 5 18V11Z' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/>
+<rect x='4' y='8' width='16' height='3' rx='1.14286' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/>
+</svg>

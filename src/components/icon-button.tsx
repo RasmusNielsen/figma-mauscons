@@ -10,7 +10,7 @@ function IconButton({ name, contents }: IconButtonProps) {
   return (
     <button
       key={name}
-      aria-label={name}
+      // aria-label={name}
       onClick={() => parent.postMessage({ pluginMessage: { type: name } }, '*')}
       css={{
         padding: theme.space[2],
@@ -28,17 +28,7 @@ function IconButton({ name, contents }: IconButtonProps) {
         },
       }}
     >
-      <svg
-        width={24}
-        height={24}
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={2}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        dangerouslySetInnerHTML={{ __html: contents }}
-      />
+      <div dangerouslySetInnerHTML={{ __html: contents }} />
     </button>
   )
 }
