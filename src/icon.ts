@@ -1,7 +1,6 @@
 interface JsonIcon {
     name: string
     content: string
-    tags: string[]
 }
 
 export class Icon {
@@ -9,10 +8,11 @@ export class Icon {
     contents: string;
     tags: string[];
 
-    constructor({ name, content, tags }: JsonIcon) {
+    constructor({ name, content }: JsonIcon) {
+        console.log(name)
         this.name = name;
         this.contents = content;
-        this.tags = tags;
+        this.tags = [];
     }
 
     toSvg() {
